@@ -1,0 +1,32 @@
+{
+    "apps": [{
+        "name": "webapp",
+        "cwd": "/data/web",
+        "script": "bin/www",
+        "exec_mode": "cluster",
+        "instances": "0",
+        "args": ["--enable-logs", "-n", "15", "--color"],
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "watch": false,
+        "merge_logs": true,
+        "autorestart": true,
+        "env": {
+            "NODE_ENV": "production",
+            "PORT": "80",
+            // "REDIS_HOST": "redis.ha.com",
+            // "REDIS_PORT": "6379",
+            // //"REDIS_PASS": "a5791E2a3043T",
+            // "RABBITMQ_HOST": "rabbitmq-rpc.ha.com",
+            // "RABBITMQ_USER": "it",
+            // "RABBITMQ_PWD": "its123",
+            // "RABBITMQ_PORT": "5672",
+            // "RABBITMQ_QUEUE": "Rpc_claim-case-queue",
+            // "REDIS_SESSION_PREFIX": "nodejs_prod_sess:",
+            // "FILESERVER_RABBITMQ_HOST": "rabbitmq-rpc.ha.com",
+            // "FILESERVER_RABBITMQ_USER": "it",
+            // "FILESERVER_RABBITMQ_PWD": "its123",
+            // "FILESERVER_RABBITMQ_PORT": "5672",
+            // "LOG_LEVEL": "info"
+        }
+    }]
+}
